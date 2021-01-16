@@ -118,7 +118,7 @@
 
         <div class="col-md-3 bg-vivid1">
             <div class="card-body col-md-3 today">
-                <h5 id="today-date" class="card-title">News | </h5>
+                <h5 id="today-date" class="card-title">News | ประกาศประจำ</h5>
                 <!--            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
 <!--                <p class="card-text"></p>-->
             </div>
@@ -185,17 +185,6 @@
         var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
         return  n.toLocaleDateString('th-TH', options);
     }
-
-    // function adjustMap() {
-    //     console.log(window.innerWidth)
-    //     if ($(window).width()) {
-    //         document.getElementById('maps').height = '75vh';
-    //     } else {
-    //         document.getElementById('maps').height = '99vh';
-    //     }
-    // }
-    //
-    // adjustMap();
     document.getElementById('today-date').innerHTML += dateNow();
 
 </script>
