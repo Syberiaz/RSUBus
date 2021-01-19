@@ -38,7 +38,7 @@
         }
         .map {
             /*width: 98vw;*/
-            height: 99vh;
+            /*height: 100vh;*/
             border: 0;
             border-radius: 0;
         }
@@ -80,12 +80,19 @@
         .bg-vivid1 {
             /*background-color: #ffffff;*/
             /*background-image: linear-gradient(121deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);*/
-            background-color: #85FFBD;
-            background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+            background-color: black;
+            /*background-color: #85FFBD;*/
+            /*background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);*/
 
         }
         .navbar-brand {
             font-weight: 600;
+        }
+        #news-tab {
+            right: 0;
+        }
+        #map-container {
+            height: 100vh;
         }
         @media only screen and (max-width: 767px) {
             .map {
@@ -115,12 +122,12 @@
 </nav>
 <div class="card border-0 text-white bg-dark">
     <div class="row g-0">
-        <div class="col-md-9 bg-white">
-            <iframe id="maps" class="card-img map" width="100%" height="100%" allowfullscreen src="//umap.openstreetmap.fr/en/map/untitled-map_549182?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=false&allowEdit=false&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=undefined&captionBar=false&fullscreenControl=false&locateControl=false&measureControl=false&editinosmControl=false"></iframe>
+        <div id="map-container" class="col-md-12 bg-white">
+            <iframe id="maps" class="card-img map h-100" width="100%" height="100%" allowfullscreen src="//umap.openstreetmap.fr/en/map/untitled-map_549182?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=false&allowEdit=false&moreControl=false&searchControl=false&tilelayersControl=false&embedControl=false&datalayersControl=false&onLoadPanel=undefined&captionBar=false&fullscreenControl=false&locateControl=false&measureControl=false&editinosmControl=false"></iframe>
         </div>
 
-        <div class="col-md-3 bg-vivid1">
-            <div class="card-body col-md-3 today">
+        <div id="news-tab" class="col-md-3 position-fixed bg-vivid1">
+            <div class="col-md-12 card-body today">
                 <h5 id="today-date" class="card-title">News | ข่าวสาร</h5>
                 <!--            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
 <!--                <p class="card-text"></p>-->
